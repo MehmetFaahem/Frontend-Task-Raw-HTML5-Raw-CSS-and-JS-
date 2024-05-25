@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <div class="circleone"></div>
+    <div class="circletwo"></div>
+    <div class="check-container">
+      <div class="container-one">
+        <h1 style="font-weight: bold; font-size: 30px; color: #d7c5fc">
+          Checkout
+        </h1>
+        <div class="check-card">
+          <p style="font-size: 23px; color: black">1. Shipping Information</p>
+          <div>
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Chevron bottom -->
+              <path
+                d="M25 35 L50 65 L75 35"
+                fill="none"
+                stroke="#000"
+                stroke-width="5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="check-card-two">
+          <div class="card-sec">
+            <p style="font-size: 23px; color: black; font-weight: bold">
+              1. Payment
+            </p>
+            <div>
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- Chevron up -->
+                <path
+                  d="M25 65 L50 35 L75 65"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="card-sec">
+            <p style="color: white; font-weight: 300">Payment Method</p>
+            <div class="payment-methods">
+              <img src="https://placehold.co/50x30" alt="Mastercard" />
+              <img src="https://placehold.co/50x30" alt="Visa" />
+              <img src="https://placehold.co/50x30" alt="Mastercard" />
+              <img src="https://placehold.co/50x30" alt="Visa" />
+              <img src="https://placehold.co/50x30" alt="Mastercard" />
+            </div>
+          </div>
+          <div>
+            <p style="color: black">Cardholder Name</p>
+            <input
+              placeholder="Cardholder Name"
+              value="John Doe"
+              class="check_input"
+            />
+          </div>
+          <div>
+            <p style="color: black">Card Number</p>
+            <input
+              placeholder="Card Number"
+              class="check_input"
+              value="1234 5678 9101 9876"
+            />
+          </div>
+          <div
+            style="display: flex; justify-items: center; width: 100%; gap: 14px"
+          >
+            <select class="check_input_two">
+              <option value="MM/YY">MM/YY</option>
+            </select>
+            <input placeholder="CVC" class="check_input_three" value="CVC" />
+          </div>
+        </div>
+        <button class="button-pay">Pay Now</button>
+      </div>
+      <div class="container-two">
+        <div class="check-card-two">
+          <div class="carousel-btn-right">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Chevron right -->
+              <path
+                d="M35 25 L65 50 L35 75"
+                fill="none"
+                stroke="#000"
+                stroke-width="5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="carousel-btn-left">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Chevron left -->
+              <path
+                d="M65 25 L35 50 L65 75"
+                fill="none"
+                stroke="#000"
+                stroke-width="5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="testimonial">
+            <h3>Ellin Wright</h3>
+            <div class="stars">
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9734;</span>
+            </div>
+            <p>
+              Fantastic service. Friendly, quick and professional. I have no
+              hesitation in recommending this company. Thank you.
+            </p>
+          </div>
+        </div>
+        <div class="check-card-two">
+          <div class="card-sec">
+            <p style="font-size: 23px; color: black; font-weight: light">
+              Order Summary
+            </p>
+          </div>
+          <div class="card-sec">
+            <p style="font-size: 19px; color: black; font-weight: light">
+              Today's Cost
+            </p>
+            <p style="font-size: 19px; color: black; font-weight: light">
+              $200
+            </p>
+          </div>
+          <div class="line"></div>
+          <div class="card-sec">
+            <p style="font-size: 19px; color: black; font-weight: light">
+              Total
+            </p>
+            <p style="font-size: 19px; color: black; font-weight: light">
+              $9900
+            </p>
+          </div>
+        </div>
+        <div class="bottom-container">
+          <div class="icons">
+            <div class="icon">
+              <img
+                src="https://placehold.co/50x50"
+                alt="Technical Support"
+                style="width: 100px; height: 100px; border-radius: 50px"
+              />
+              <p>Technical Support</p>
+            </div>
+            <div class="icon">
+              <img
+                src="https://placehold.co/50x50"
+                alt="Secure Checkout"
+                style="width: 100px; height: 100px; border-radius: 50px"
+              />
+              <p>Secure Checkout</p>
+            </div>
+            <div class="icon">
+              <img
+                src="https://placehold.co/50x50"
+                alt="Safe Browsing"
+                style="width: 100px; height: 100px; border-radius: 50px"
+              />
+              <p>Safe Browsing</p>
+            </div>
+          </div>
+          <div class="text-content">
+            <p>
+              bsbbhelpline.com | bghelper.com | bbbcshelp.com | bbghelpdesk.com
+              will be displayed on your bank statement as a charge from BENSET
+              LIMITED
+            </p>
+            <p>
+              You will be billed by BENSET LIMITED, an e-commerce merchant
+              located in the Cyprus.
+            </p>
+            <p>
+              By completing this purchase, you consent to a 2-day trial
+              membership with bebudget.com for €2, and you acknowledge that
+              unless you cancel within due time, You will be enrolled in the
+              full 10-day membership at the price of €39 every 10 days. If the
+              trial is not cancelled, you will be charged €39 every 10 days
+              until the membership is canceled.
+            </p>
+            <p>
+              All purchases are covered by a 14-day full refund guarantee. The
+              decision to reimburse a charge does not insure the obligation to
+              reimburse other subsequent expenses. Any charge refunded by
+              bebudget.com for any reason, will be refunded by the payment
+              method used for the original transaction. bebudget.com will not
+              credit any cash charges. Any request for refund must be made by
+              contacting customer service.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

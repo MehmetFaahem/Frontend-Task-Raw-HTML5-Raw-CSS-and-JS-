@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>About us</title>
+  </head>
+  <body>
+    <script src="index.js"></script>
+
+    <nav class="mobile-navbar" style="background-color: #000">
+      <div style="display: flex; justify-items: center; place-items: center">
+        <img
+          src="https://placehold.co/40x40"
+          alt="Logo"
+          style="margin-right: 40px; border-radius: 20px"
+        />
+      </div>
+      <div style="display: flex; place-items: center; gap: 10px">
+        <div class="language">
+          <span>Eng</span>
+          <select class="select_lang">
+            <option value="en">Eng</option>
+            <option value="es">Esp</option>
+            <option value="fr">Fr</option>
+          </select>
+        </div>
+        <div
+          style="display: block; margin-top: 5px"
+          id="humburger"
+          onclick="handleOpenDrawer()"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="30" height="3" x="5" y="10" fill="#fff" />
+            <rect width="30" height="3" x="5" y="18" fill="#fff" />
+            <rect width="30" height="3" x="5" y="26" fill="#fff" />
+          </svg>
+        </div>
+      </div>
+      <div
+        id="drawer"
+        style="
+          display: none;
+          background-color: white;
+          height: 100%;
+          width: 50%;
+          position: fixed;
+          top: 0;
+          right: 0;
+        "
+      >
+        <div
+          style="position: absolute; top: 20px; right: 20px"
+          id="cross"
+          onclick="handleCloseDrawer()"
+        >
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- Circle for the button background -->
+            <circle
+              cx="50"
+              cy="50"
+              r="45"
+              fill="#ccc"
+              stroke="#000"
+              stroke-width="2"
+            />
+            <!-- Cross lines -->
+            <line
+              x1="30"
+              y1="30"
+              x2="70"
+              y2="70"
+              stroke="#000"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+            <line
+              x1="70"
+              y1="30"
+              x2="30"
+              y2="70"
+              stroke="#000"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <ul
+          style="
+            font-weight: 200;
+            text-decoration: none;
+            text-align: start;
+            margin-top: 90px;
+          "
+          class="nav-list"
+        >
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./contact-us.html">Contact Us</a></li>
+          <li><a href="./about-us.html">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar">
+      <div style="display: flex; justify-items: center; place-items: center">
+        <img
+          src="https://placehold.co/40x40"
+          alt="Logo"
+          style="margin-right: 40px; border-radius: 20px"
+        />
+        <ul style="font-weight: 200">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./contact-us.html">Contact Us</a></li>
+          <li><a href="./about-us.html">About Us</a></li>
+        </ul>
+      </div>
+      <div style="display: flex">
+        <div class="auth-buttons">
+          <button class="login">Log in</button>
+          <button class="signup">Sign Up</button>
+        </div>
+        <div class="language">
+          <span>Eng</span>
+          <select class="select_lang">
+            <option value="en">Eng</option>
+            <option value="es">Esp</option>
+            <option value="fr">Fr</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+    <div class="about-us-section">
+      <h1>About Us</h1>
+      <p>Home &gt; About Us</p>
+    </div>
+    <div class="content-two">
+      <div class="text-section">
+        <h1 style="font-weight: bold; margin-top: 20px; margin-bottom: 20px">
+          Navigate Work Dynamics
+        </h1>
+        <p>
+          In the complexity of today's workplace, effective communication acts
+          as your guiding light. It's not merely about conveying information;
+          it's about crafting connections and fostering understanding. Our soft
+          skills courses delve deep into the art of communication, equipping you
+          with the tools to navigate diverse work dynamics with finesse. Learn
+          to articulate your ideas with clarity, listen attentively to others,
+          and communicate persuasively to influence outcomes. Whether in
+          meetings, presentations, or daily interactions, harness the power of
+          communication to propel your career forward.
+        </p>
+      </div>
+      <div class="image-section">
+        <img
+          src="https://placehold.co/400x400"
+          alt="Person at a laptop"
+          class="img_of_about"
+        />
+      </div>
+    </div>
+    <div class="content-three">
+      <div class="text-section">
+        <h1 style="font-weight: bold; margin-top: 20px; margin-bottom: 20px">
+          Embrace Growth, Enrich Your Journey!
+        </h1>
+        <p>
+          As you embark on your journey to excel in soft skills, remember that
+          every step forward enriches your professional and personal life.
+          Embrace the opportunity for growth and development that soft skills
+          training offers. By honing your communication, leadership, and
+          problem-solving skills, and fostering empathy and adaptability in your
+          interactions, you not only enhance your career prospects but also
+          enrich your journey through life. Seize the moment, embrace growth,
+          and embark on a path towards greater success and fulfillment.
+        </p>
+      </div>
+      <div class="image-section">
+        <img
+          src="https://placehold.co/400x400"
+          alt="Person at a laptop"
+          class="img_of_about"
+        />
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-content">
+        <div class="logo">
+          <img
+            src="https://placehold.co/50x50"
+            alt="Logo"
+            style="border-radius: 25px"
+          />
+        </div>
+        <div class="footer-section useful-links">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Subscription and Cancellation Policy</a></li>
+            <li><a href="#">Unsubscribe</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact-info">
+          <h3>Contact Information</h3>
+          <p>
+            <span style="font-weight: 600">Email:</span>
+            support@budgetbscope.com
+          </p>
+          <p><span style="font-weight: 600">Phone:</span> +44 123456789</p>
+          <p>
+            <span style="font-weight: 600">Working Hours:</span> Monday - Friday
+            00-24 (CET), Weekends 9:00 - 17:00 (CET)
+          </p>
+          <p>
+            <span style="font-weight: 600">Address:</span> 21 cromwell road,
+            ringsfield, suffolk, Beccles Nr34 8lr, United Kingdom
+          </p>
+        </div>
+      </div>
+      <div class="payment-methods">
+        <img src="https://placehold.co/50x30" alt="Mastercard" />
+        <img src="https://placehold.co/50x30" alt="Visa" />
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        Copyright © Budgetbscope 2023. Blindscope limited - CR: 14031689 - 21
+        cromwell road, ringsfield, suffolk, Beccles Nr34 8lr, United Kingdom |
+        All rights reserved.
+      </p>
+    </div>
+  </body>
+</html>

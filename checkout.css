@@ -1,0 +1,319 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: rgb(104, 54, 250);
+  background: linear-gradient(
+    133deg,
+    rgba(104, 54, 250, 1) 0%,
+    rgba(155, 30, 245, 1) 50%,
+    rgba(104, 54, 250, 1) 100%
+  );
+  color: white;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+.check-container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.circleone {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background: rgb(206, 6, 240);
+  background: linear-gradient(
+    133deg,
+    rgba(206, 6, 240, 1) 37%,
+    rgba(104, 54, 250, 1) 92%
+  );
+  position: absolute;
+  top: 200px;
+  left: -70px;
+  z-index: -1;
+}
+
+.circletwo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background: rgb(206, 6, 240);
+  background: linear-gradient(
+    133deg,
+    rgba(206, 6, 240, 1) 37%,
+    rgba(104, 54, 250, 1) 92%
+  );
+  position: absolute;
+  top: 500px;
+  right: -70px;
+  z-index: -1;
+}
+
+.check-card {
+  display: flex;
+  place-items: center;
+  justify-items: center;
+  padding: 20px;
+  height: 70px;
+  width: 100%;
+  border: 1px solid #d7c5fc;
+  justify-content: space-between;
+  border-radius: 24px;
+  font-weight: 600;
+  margin-top: 30px;
+  background-color: rgba(146, 100, 246, 0.607); /* Adjust transparency here */
+  backdrop-filter: blur(5px); /* Adjust blur intensity here */
+}
+
+.check-card-two {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  border: 1px solid #d7c5fc;
+  justify-content: space-between;
+  border-radius: 24px;
+  margin-top: 30px;
+  background-color: rgba(146, 100, 246, 0.607); /* Adjust transparency here */
+  backdrop-filter: blur(5px); /* Adjust blur intensity here */
+  position: relative;
+}
+
+.check_input {
+  padding: 20px;
+  height: auto;
+  width: 95%;
+  border: 1px solid #d7c5fc;
+  border-radius: 14px;
+  background-color: rgba(192, 163, 255, 0.712); /* Adjust transparency here */
+  backdrop-filter: blur(5px); /* Adjust blur intensity here */
+  color: white;
+}
+
+.check_input_two {
+  padding: 20px;
+  margin-top: 20px;
+  height: auto;
+  width: 50%;
+  border: 1px solid #d7c5fc;
+  border-radius: 14px;
+  background-color: rgb(146, 100, 246); /* Adjust transparency here */
+  backdrop-filter: blur(5px); /* Adjust blur intensity here */
+  color: white;
+}
+
+.check_input_three {
+  margin-top: 20px;
+  padding: 20px;
+  height: auto;
+  width: 50%;
+  border: 1px solid #d7c5fc;
+  border-radius: 14px;
+  background-color: rgb(146, 100, 246); /* Adjust transparency here */
+  backdrop-filter: blur(5px); /* Adjust blur intensity here */
+  color: white;
+}
+
+.button-pay {
+  width: 107%;
+  padding: 20px;
+  color: white;
+  background-color: #5d22f6;
+  text-align: center;
+  border: 1px solid #d7c5fc;
+  border-radius: 14px;
+  margin-top: 20px;
+  font-size: 19px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.card-sec {
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.testimonial-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6e00ff, #c100ff);
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.testimonial h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: black;
+}
+
+.stars {
+  margin-bottom: 10px;
+}
+
+.stars span {
+  color: gold;
+  font-size: 1.5em;
+}
+
+.testimonial p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: black;
+}
+
+.carousel-btn-right {
+  background-color: rgba(168, 133, 245, 0.765); /* Adjust transparency here */
+  backdrop-filter: blur(5px); /* Adjust blur intensity here */
+  border: none;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  right: -20px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  border-radius: 20px;
+  place-items: center;
+  place-content: center;
+}
+
+.carousel-btn-left {
+  background-color: rgba(168, 133, 245, 0.765); /* Adjust transparency here */
+  backdrop-filter: blur(5px); /* Adjust blur intensity here */
+  border: none;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  left: -20px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  border-radius: 20px;
+  place-items: center;
+  place-content: center;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.icon p {
+  margin: 0;
+  font-weight: 100;
+  margin-top: 15px;
+}
+.text-content {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 100;
+}
+
+.container-one {
+  width: 40%;
+}
+
+.container-two {
+  width: 40%;
+  margin-top: 50px;
+  margin-left: 105px;
+}
+
+.bottom-container {
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  .bottom-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .circletwo {
+    left: 0px;
+  }
+  .circleone {
+    right: 0px;
+  }
+  .container-two {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+  .check-card {
+    width: 320px;
+  }
+  .check-card-two {
+    width: 320px;
+  }
+  .conatiner-one {
+    width: 100%;
+  }
+
+  .check_input {
+    width: 90%;
+  }
+
+  .button-pay {
+    width: 365px;
+  }
+
+  .conatiner-two {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .check-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .icons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon {
+    margin-bottom: 20px;
+  }
+}

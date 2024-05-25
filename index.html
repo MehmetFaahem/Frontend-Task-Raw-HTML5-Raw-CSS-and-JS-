@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soft Skills Courses</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <nav class="mobile-navbar">
+      <div style="display: flex; justify-items: center; place-items: center">
+        <img
+          src="https://placehold.co/40x40"
+          alt="Logo"
+          style="margin-right: 40px; border-radius: 20px"
+        />
+      </div>
+      <div style="display: flex; place-items: center; gap: 10px">
+        <div class="language">
+          <span>Eng</span>
+          <select class="select_lang">
+            <option value="en">Eng</option>
+            <option value="es">Esp</option>
+            <option value="fr">Fr</option>
+          </select>
+        </div>
+        <div
+          style="display: block; margin-top: 5px"
+          id="humburger"
+          onclick="handleOpenDrawer()"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="30" height="3" x="5" y="10" fill="#fff" />
+            <rect width="30" height="3" x="5" y="18" fill="#fff" />
+            <rect width="30" height="3" x="5" y="26" fill="#fff" />
+          </svg>
+        </div>
+      </div>
+      <div
+        id="drawer"
+        style="
+          display: none;
+          background-color: white;
+          height: 100%;
+          width: 50%;
+          position: fixed;
+          top: 0;
+          right: 0;
+        "
+      >
+        <div
+          style="position: absolute; top: 20px; right: 20px"
+          id="cross"
+          onclick="handleCloseDrawer()"
+        >
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- Circle for the button background -->
+            <circle
+              cx="50"
+              cy="50"
+              r="45"
+              fill="#ccc"
+              stroke="#000"
+              stroke-width="2"
+            />
+            <!-- Cross lines -->
+            <line
+              x1="30"
+              y1="30"
+              x2="70"
+              y2="70"
+              stroke="#000"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+            <line
+              x1="70"
+              y1="30"
+              x2="30"
+              y2="70"
+              stroke="#000"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <ul
+          style="
+            font-weight: 200;
+            text-decoration: none;
+            text-align: start;
+            margin-top: 90px;
+          "
+          class="nav-list"
+        >
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./contact-us.html">Contact Us</a></li>
+          <li><a href="./about-us.html">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar">
+      <div style="display: flex; justify-items: center; place-items: center">
+        <img
+          src="https://placehold.co/40x40"
+          alt="Logo"
+          style="margin-right: 40px; border-radius: 20px"
+        />
+        <ul style="font-weight: 200" class="nav-list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./contact-us.html">Contact Us</a></li>
+          <li><a href="./about-us.html">About Us</a></li>
+        </ul>
+      </div>
+      <div style="display: flex">
+        <div class="auth-buttons">
+          <button class="login">Log in</button>
+          <button class="signup">Sign Up</button>
+        </div>
+        <div class="language">
+          <span>Eng</span>
+          <select class="select_lang">
+            <option value="en">Eng</option>
+            <option value="es">Esp</option>
+            <option value="fr">Fr</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+    <div class="header-content">
+      <h1>
+        Maximize Your Potential with <span>Our Soft Skills Courses!</span>
+      </h1>
+      <p>
+        Discover the key to unlocking your full potential through our
+        comprehensive soft skills courses. Elevate your career prospects,
+        enhance personal growth, and excel in every aspect of life.
+      </p>
+      <button class="cta-button">
+        Get Started
+        <span style="margin-left: 10px">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="50"
+              cy="50"
+              r="48"
+              stroke="white"
+              stroke-width="4"
+              fill="none"
+            />
+            <polygon points="40,30 70,50 40,70" fill="white" />
+          </svg>
+        </span>
+      </button>
+    </div>
+    <div
+      class="features-section"
+      style="margin-top: 100px; padding-bottom: 100px"
+    >
+      <div
+        class="features-header"
+        style="margin-top: 50px; margin-bottom: 50px"
+      >
+        <div
+          style="
+            display: flex;
+            place-items: center;
+            place-content: center;
+            justify-items: center;
+            justify-content: center;
+          "
+        >
+          <div class="after_of_title"></div>
+          <span class="features-title">Features</span>
+        </div>
+        <h2 style="font-weight: bold; font-size: 40px">
+          Explore Our Standout Features
+        </h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <img
+            src="https://placehold.co/50x50"
+            alt="Diverse Topics Icon"
+            class="feature-icon"
+          />
+          <h3>Diverse Topics</h3>
+          <p>
+            Explore an extensive array of subjects covering essential soft
+            skills, enabling learners to develop a well-rounded skill set and
+            thrive in diverse personal and professional contexts.
+          </p>
+        </div>
+        <div class="feature-card">
+          <img
+            src="https://placehold.co/50x50"
+            alt="Real-world Scenarios Icon"
+            class="feature-icon"
+          />
+          <h3>Real-world Scenarios</h3>
+          <p>
+            Immerse yourself in hands-on learning through practical examples
+            that closely mirror real-life situations, ensuring immediate
+            application and retention of skills.
+          </p>
+        </div>
+        <div class="feature-card">
+          <img
+            src="https://placehold.co/50x50"
+            alt="Industry-Relevant Content Icon"
+            class="feature-icon"
+          />
+          <h3>Industry-Relevant Content</h3>
+          <p>
+            Our curriculum is meticulously crafted to meet the specific demands
+            and challenges of various industries, ensuring that learners gain
+            practical skills that are directly applicable in professional
+            settings.
+          </p>
+        </div>
+        <div class="feature-card">
+          <img
+            src="https://placehold.co/50x50"
+            alt="Flexibility Icon"
+            class="feature-icon"
+          />
+          <h3>Flexibility</h3>
+          <p>
+            Our courses provide students with a range of flexible options,
+            allowing them to tailor their learning experience to fit their
+            unique schedules and preferences.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-items: center; place-items: center">
+      <div class="content">
+        <div class="text-section">
+          <div style="display: flex; place-items: center">
+            <div class="after_of_title"></div>
+            <span class="features-title">About Us</span>
+          </div>
+          <h1 style="font-weight: bold; margin-top: 20px; margin-bottom: 20px">
+            Navigate Work Dynamics
+          </h1>
+          <p>
+            In the complexity of today's workplace, effective communication acts
+            as your guiding light. It's not merely about conveying information;
+            it's about crafting connections and fostering understanding. Our
+            soft skills courses delve deep into the art of communication,
+            equipping you with the tools to navigate diverse work dynamics with
+            finesse. Learn to articulate your ideas with clarity, listen
+            attentively to others, and communicate persuasively to influence
+            outcomes. Whether in meetings, presentations, or daily interactions,
+            harness the power of communication to propel your career forward.
+          </p>
+        </div>
+        <div class="image-section">
+          <img src="https://placehold.co/400x400" alt="Person at a laptop" />
+        </div>
+      </div>
+    </div>
+    <div class="pricing-section">
+      <div style="display: flex; place-items: center">
+        <div class="after_of_title"></div>
+        <span class="features-title">Pricing</span>
+      </div>
+      <div class="pricing-cards" style="margin-top: 60px">
+        <div class="pricing-card">
+          <div class="package-label">Gold Package</div>
+          <div class="price">€16<span>/month</span></div>
+          <div class="trial">3 days trial/3€</div>
+          <div class="line"></div>
+          <ul class="features">
+            <li>
+              <span class="right-mark">✔</span>
+
+              Lorem ipsum dolor sit amet
+            </li>
+            <li>
+              <span class="right-mark">✔</span>
+
+              Lorem ipsum dolor sit amet
+            </li>
+            <li>
+              <span class="right-mark">✔</span> Lorem ipsum dolor sit amet
+            </li>
+            <li>
+              <span class="right-mark">✔</span> Lorem ipsum dolor sit amet
+            </li>
+            <li>
+              <span class="right-mark">✔</span> Lorem ipsum dolor sit amet
+            </li>
+          </ul>
+          <div class="line"></div>
+          <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="pricing-card">
+          <div class="package-label">Gold Package</div>
+          <div class="price">€16<span>/month</span></div>
+          <div class="trial">3 days trial/3€</div>
+          <div class="line"></div>
+          <ul class="features">
+            <li>
+              <span class="right-mark">✔</span> Lorem ipsum dolor sit amet
+            </li>
+            <li>
+              <span class="right-mark">✔</span> Lorem ipsum dolor sit amet
+            </li>
+            <li>
+              <span class="right-mark">✔</span> Lorem ipsum dolor sit amet
+            </li>
+            <li>
+              <span class="right-mark">✔</span> Lorem ipsum dolor sit amet
+            </li>
+            <li>
+              <span class="right-mark">✔</span> Lorem ipsum dolor sit amet
+            </li>
+          </ul>
+          <div class="line"></div>
+          <button class="buy-button">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-content">
+        <div class="logo">
+          <img
+            src="https://placehold.co/50x50"
+            alt="Logo"
+            style="border-radius: 25px"
+          />
+        </div>
+        <div class="footer-section useful-links">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Subscription and Cancellation Policy</a></li>
+            <li><a href="#">Unsubscribe</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact-info">
+          <h3>Contact Information</h3>
+          <p>
+            <span style="font-weight: 600">Email:</span>
+            support@budgetbscope.com
+          </p>
+          <p><span style="font-weight: 600">Phone:</span> +44 123456789</p>
+          <p>
+            <span style="font-weight: 600">Working Hours:</span> Monday - Friday
+            00-24 (CET), Weekends 9:00 - 17:00 (CET)
+          </p>
+          <p>
+            <span style="font-weight: 600">Address:</span> 21 cromwell road,
+            ringsfield, suffolk, Beccles Nr34 8lr, United Kingdom
+          </p>
+        </div>
+      </div>
+      <div class="payment-methods">
+        <img src="https://placehold.co/50x30" alt="Mastercard" />
+        <img src="https://placehold.co/50x30" alt="Visa" />
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        Copyright © Budgetbscope 2023. Blindscope limited - CR: 14031689 - 21
+        cromwell road, ringsfield, suffolk, Beccles Nr34 8lr, United Kingdom |
+        All rights reserved.
+      </p>
+    </div>
+  </body>
+</html>
